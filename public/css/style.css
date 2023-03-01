@@ -1,0 +1,67 @@
+:root {
+    --primary: #0090d4;
+    --secondary: white;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.text {
+    color: var(--primary);
+}
+.bg {
+    background-color: var(--primary);
+}
+.text-second {
+    color: var(--secondary);
+}
+.bg-second {
+    background-color: var(--secondary);
+}
+
+.bg-hero {
+    width: 100vw;
+    height: 200px;
+    background-color: var(--primary);
+}
+
+.img-hero {
+    width: 100vw;
+}
+
+.bg-laporan {
+    width: 100vw;
+    padding: 0 20px;
+}
+
+.bg-laporan .d-flex {
+    flex-direction: row;
+}
+.bg-laporan .d-flex p{
+    margin-left: 10px;
+    text-align: left;
+}
+.foto-profil img {
+    width: calc(1.2rem + 10vw);
+    height: calc(1.2rem + 10vw);
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        align-items: center;
+    }
+
+    .bg-laporan .d-flex {
+        flex-direction: column;
+    }
+    .bg-laporan .d-flex p{
+        text-align: center;
+    }
+
+    .foto-profil img {
+        width: 150px;
+        height: 150px;
+    }
+}

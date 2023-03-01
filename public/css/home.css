@@ -1,0 +1,112 @@
+.custom-shape-divider-top-1677502627 {
+    width: 100%;
+    margin-top: -5px;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1677502627 svg {
+    position: relative;
+    display: block;
+    width: calc(158% + 1.3px);
+    height: 169px;
+}
+
+.custom-shape-divider-top-1677502627 .shape-fill {
+    fill: #0090D4;
+}
+
+
+.bg-home {
+    width: 100vw;
+    height: calc(20rem + 5vw);
+    background-color: #0090d4;
+}
+
+
+
+.header-text {
+    animation: bounceIn;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    /* don't forget to set a duration! */
+}
+
+.landing-page {
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+
+.instruction div {
+    width: 70px;
+    height: 70px;
+}
+
+.arrow {
+    font-size: 30px;
+}
+
+.petunjuk {
+    margin-bottom: 100px;
+}
+
+/* .about {
+    height: 50vh;
+} */
+
+@media screen and (max-width: 992px) {
+
+    .landing-page {
+        height: 200px;
+        margin-bottom: 250px;
+    }
+    .header-text {
+        padding: 0 10px;
+        margin-top: 30px;
+    }
+
+    .header-text p:nth-child(1) {
+        margin-bottom: -20px;
+    }
+
+    .bg-home {
+        height: calc(10.1rem + 10vw);
+    }
+
+    .petunjuk {
+        height: 100px !important;
+    }
+
+    .instruction div {
+        width: calc(20px + 5vw);
+        height: calc(20px + 5vw);
+    }
+
+    .instruction p {
+        font-size: calc(.5rem + 1vw) !important;
+    }
+
+    .about {
+        margin-top: 200px;
+    }
+
+    .cards {
+        margin-top: 200px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .about-text {
+        text-align: center;
+    }
+    .instruction p {
+        font-size: calc(.6rem + 1vw) !important;
+    }
+
+
+}

@@ -1,0 +1,124 @@
+.noselect {
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.selesai {
+    background: green;
+}
+.batal {
+    background: yellow;
+}
+.proses {
+    background: #0090d4;
+}
+.lihat {
+    background: black;
+}
+
+.noselect,
+.noselect span {
+    transition: 200ms;
+}
+
+.noselect .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+}
+.batal .text {
+    transform: translateX(35px);
+    color: black;
+    font-weight: bold;
+}
+
+.noselect .icon {
+    position: absolute;
+    border-left: 1px solid #c41b1b;
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.selesai .icon {
+    position: absolute;
+    border-left: 1px solid rgb(3, 97, 3);
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proses .icon {
+    position: absolute;
+    border-left: 1px solid rgb(8, 79, 145);
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.batal .icon {
+    position: absolute;
+    border-left: 1px solid rgb(136, 145, 13);
+    transform: translateX(110px);
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noselect svg {
+    width: 15px;
+    fill: #eee;
+}
+.batal svg {
+    width: 15px;
+    fill: black;
+}
+
+.noselect:hover {
+    background: #ff3636;
+}
+.proses:hover {
+    background: #0090d4;
+}
+.selesai:hover {
+    background: green;
+}
+.lihat:hover {
+    background: black;
+}
+.batal:hover {
+    background: yellow;
+}
+
+.noselect:hover .text {
+    color: transparent;
+}
+
+.noselect:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+}
+
+.noselect:focus {
+    outline: none;
+}
+
+.noselect:active .icon svg {
+    transform: scale(0.8);
+}
